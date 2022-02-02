@@ -1,7 +1,7 @@
 import './styles/style.css';
 import Home from './components/Home';
 import Login from './components/Login';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { HashRouter as Router, Routes, Route} from 'react-router-dom';
 
 function App() {
   return (
@@ -10,10 +10,10 @@ function App() {
 
       <Router>
         <Routes>
-          <Route path="/" element={ <Home/>}></Route>
+          <Route path="/" element={ <Home/>}/>
 
 
-          <Route path="/login" element={<Login/>}></Route>
+          <Route path="/login" element={<Login/>}/>
         </Routes>
       </Router>
      
