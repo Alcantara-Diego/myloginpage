@@ -1,0 +1,149 @@
+$basicShadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.322);
+$navColor: #6c63ff;
+$mainColor: #F23B5F;
+$borderTest: 1px solid green;
+
+@import "_login";
+@import "_decorations";
+
+html{
+    font-size: 22px;
+}
+.navbar{
+    background-color: $navColor;
+    height: 9vh;
+    overflow: hidden;
+    z-index: 100;
+    .app-title{
+        color: black;
+        cursor: pointer;
+    }
+}
+
+.nav-link{
+    color: white;
+    transition: 500ms;
+    &:hover{
+        color: $mainColor;
+    }
+}
+.activeLink{
+    font-weight: bold;
+    color: $mainColor;
+    border-bottom: 2px solid $mainColor;
+}
+
+main{
+    height: 90vh;
+    width: 100vw;
+    background-image: linear-gradient(to top, #dbdbdb, #f1f1f1);
+    flex-direction: row;
+    justify-content: space-around;
+
+    overflow: hidden;
+    z-index: 50;
+}
+.heroContent{
+    width: 40vw;
+    text-align: center;
+    
+
+    h1{
+        color: $mainColor;
+        font-weight: bold;
+        z-index: 100;
+    }
+
+    p{
+        color: black;
+    }
+
+
+    .actionBtn{
+        width: 180px;
+        font-size: 1rem;
+        padding: 0.3em;
+        margin: auto;
+        
+        text-decoration: none;
+        color: black;
+        background-color: $mainColor;
+        border: 2px solid black;
+        border-radius: 45px;
+        box-shadow: $basicShadow;
+        transition: 500ms;
+        z-index: 100;
+
+        &:hover{
+            border: 3px solid black;
+            letter-spacing: 1px;
+            
+        }
+    }
+
+
+    
+}
+
+
+.ilustrationContainer{
+    width: 40vw;
+    height: 100%;
+}
+.ilustration{
+    display: inline-block;
+    width: 100%;
+    transform: translateX(2.5vw);
+
+    z-index: 100;
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    .navbar{
+        height: 7vh;
+        padding: 3px;
+    }
+    main{
+        flex-direction: column-reverse;
+        height: 93vh;
+
+        .ilustrationContainer{
+            height: 20%;
+            width: 60vw;
+
+            .ilustration{
+                width: 150%;
+                transform: translate(14vw, 10vh);
+
+            }
+
+        }
+
+        
+    }
+
+
+    .heroContent{
+        width: 90vw;
+        padding-top: 22vh;
+
+        p{
+            text-align: start;
+        }
+
+        .actionBtn{
+            width: 100%;
+            padding: 0.2rem;
+            border: none;
+            border-radius: 10px;
+            margin: 5px auto;
+        }
+    }
+    
+}

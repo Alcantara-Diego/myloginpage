@@ -1,0 +1,219 @@
+$formPadding: 30px 25px;
+
+.loginContainer{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    background-color: #dadada;
+
+    .actionBtn{
+        border-radius: 8px;
+        border: none;
+        padding: 5px;
+    }
+    .goBackHome{
+        position: absolute;
+        top: 15px;
+        left: 25px;
+        color: black;
+        text-decoration: none;
+        transition: 500ms;
+        &:hover, &:focus{
+            color: $mainColor;
+        }
+    }
+
+    .loginContentContainer{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        display: flex;
+        flex-direction: row;
+        width: 700px;
+        height: 75%;
+
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 15px;
+
+        overflow: hidden;
+        box-shadow: $basicShadow;
+
+
+        
+
+        .formContainer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            width: 400px;
+    
+    
+            .formHeader{
+                text-align: center;
+                padding: $formPadding;
+    
+                h2{
+                    color: $mainColor
+                }
+    
+                img{
+                    width: 65%;
+                }
+            }
+    
+    
+    
+            form{
+                display: flex;
+                flex-direction: column;
+    
+                height: fit-content;
+                padding: $formPadding;
+                
+                
+    
+    
+                .inputDescription{
+                    margin-bottom: 0;
+                    font-weight: bold;
+                    color: gray;
+        
+                }
+                input{
+                    padding: 3px;
+                    text-indent: 3px;
+                    border-radius: 8px;
+                    border: none;
+                    background-color: #dbdbdb;
+                }
+        
+                button{
+                    margin-top: 1.5rem;
+                    background-color: $mainColor;
+                    color: white;
+                }
+
+                .mobileSignUpSugestion{
+                    font-size: 16px;
+                    text-align: center;
+                    color: #555555;
+                    display: none;
+
+                    a{
+                        color: $mainColor;
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                }
+            }
+            
+        }
+    
+        .signInSugestionSection{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            text-align: center;
+            justify-content: center;
+            padding: $formPadding;
+            width: calc(100% -400px);
+            background-image: linear-gradient(to bottom, #ff7272, $mainColor);
+
+
+            overflow: hidden;
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+
+
+            .info{
+
+                z-index: 10;
+
+                .welcomeMsg{
+                    color: white;
+                }
+    
+                p{
+                    color: white;
+                    font-size: 0.9rem;
+                    margin-bottom: 0;
+                }
+    
+                button{
+                    width: 80%;
+                    margin-top: 1rem;
+                    background-color: white;
+                    color: $mainColor;
+                    box-shadow: $basicShadow;
+                }
+
+            }
+            
+        }
+    }
+
+    
+}
+
+@media screen and (max-width: 770px) {
+    .loginContainer{
+
+        .loginContentContainer{
+            width: 95vw;
+        }
+    }
+}
+
+@media screen and (max-width: 770px){
+
+    .loginContainer{
+
+        .loginContentContainer{
+            width: 350px;
+            height: fit-content;
+
+
+            .formContainer{
+                width: 100%;
+
+                .mobileSignUpSugestion{
+                    display: block!important;
+                }
+            }
+
+            .signInSugestionSection{
+                display: none!important;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 430px){
+
+    .loginContainer{
+
+        .loginContentContainer{
+            width: 100vw;
+            border: none;
+            border-radius: 0;
+            height: 100vh;
+
+            .goBackHome{
+                font-size: 1.3rem;
+            }
+
+            .formHeader{
+                padding-bottom: 0!important;
+            }
+ 
+        }
+    }
+}

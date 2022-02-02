@@ -1,0 +1,88 @@
+main{
+    .decorationItem{
+        position: absolute;
+    }
+    .box{
+        width: 46vw;
+        height: 95vh;
+    }   
+    .box1{
+        top: 30%;
+        right: 2vw;
+        background-color: $mainColor;
+        transform: rotate(45deg) translateY(-50%);
+        z-index: 1;
+    }
+    .box2{
+        background-color: #6c63ff;
+        top: 27%;
+        right: 2vw;
+        transform: rotate(45deg) translateY(-50%);
+    }
+}
+
+
+.loginContainer{
+
+    .decoration{
+        position: absolute;
+        background-color: #f55071;
+    }
+    .circle1{
+        bottom: -55px;
+        left: -55px;
+        border-radius: 50%;
+
+        width: 9.9rem;
+        height: 9.9rem;
+    }
+    .square1{
+        top: 65px;
+        right: 75px;
+
+        width: 2.3rem;
+        height: 2.3rem;
+        transform: rotate(130deg);
+    }
+    .form1{
+        top: 105px;
+        left: 55px;
+
+        width: 4rem;
+        height: 1.1rem;
+        transform: rotate(150deg);
+    }
+    .form2{
+        bottom: 115px;
+        right: 55px;
+
+        width: 4rem;
+        height: 1.1rem;
+        transform: rotate(30deg);
+    }
+}
+
+
+@media screen and (max-width: 500px){
+
+    main{
+
+        .box{
+            width: 65vw;
+            height: 110vh;
+        
+        }
+        .box1{
+            top: -30%;
+            right: 47vw;
+            transform: rotate(45deg) translateY(-50%);
+        }
+        .box2{
+            top: -28%;
+            right: 47vw;
+            transform: rotate(45deg) translateY(-50%);
+        }
+
+    }
+    
+}
