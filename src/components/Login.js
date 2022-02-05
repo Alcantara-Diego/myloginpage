@@ -9,7 +9,7 @@ function Login(){
             <div className='loginContentContainer'>
 
                 {/* Opening button to go back home */}
-                <a href='/' className='goBackHome'><i className="bi bi-arrow-left-circle"></i>
+                <a href='/myloginpage' className='goBackHome'><i className="bi bi-arrow-left-circle"></i>
                 </a>
                 {/* Closing button to go back home */}
 

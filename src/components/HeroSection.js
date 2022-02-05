@@ -14,7 +14,7 @@ function HeroSection(){
 
                 <p>Entre com sua conta ou crie uma agora para se manter em contato com a gente e aproveitar de todos nossos serviços!</p>
 
-                <a href="/login" className="actionBtn">Começar</a>
+                <a href="/myloginpage/#/login" className="actionBtn">Começar</a>
 
                 <div className="decorationCircle"></div>
 
