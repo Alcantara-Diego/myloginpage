@@ -1,5 +1,8 @@
 $formPadding: 30px 25px;
 
+.primaryColor{
+    color: $mainColor;
+}
 .loginContainer{
     position: relative;
     display: flex;
@@ -66,6 +69,14 @@ $formPadding: 30px 25px;
                     width: 65%;
                 }
             }
+
+            .signUpHeader{
+                padding: 10px 25px;
+
+                img{
+                    width: 55%;
+                }
+            }
     
     
     
@@ -93,7 +104,7 @@ $formPadding: 30px 25px;
                     background-color: #dbdbdb;
                 }
         
-                button{
+                .actionBtn{
                     margin-top: 1.5rem;
                     background-color: $mainColor;
                     color: white;
@@ -105,7 +116,7 @@ $formPadding: 30px 25px;
                     color: #555555;
                     display: none;
 
-                    a{
+                    .mobileLink{
                         color: $mainColor;
                         text-decoration: underline;
                         cursor: pointer;
@@ -146,11 +157,14 @@ $formPadding: 30px 25px;
                     margin-bottom: 0;
                 }
     
-                button{
+                .suggestionBtn{
+                    display: inline-block;
                     width: 80%;
                     margin-top: 1rem;
                     background-color: white;
                     color: $mainColor;
+
+                    text-decoration: none;
                     box-shadow: $basicShadow;
                 }
 
