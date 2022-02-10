@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/myloginpage/static/css/main.5b2406ce.css",
-    "main.js": "/myloginpage/static/js/main.73d9826a.js",
+    "main.css": "/myloginpage/static/css/main.8daee8b6.css",
+    "main.js": "/myloginpage/static/js/main.7688880c.js",
     "static/js/787.078d530c.chunk.js": "/myloginpage/static/js/787.078d530c.chunk.js",
     "static/media/svg1.svg": "/myloginpage/static/media/svg1.9967ef8f3c23eb0b22f8028ae13a263f.svg",
     "static/media/signupsvg.svg": "/myloginpage/static/media/signupsvg.a002756649bff1ffcaa603ed5b7b159b.svg",
     "static/media/loginsvg.svg": "/myloginpage/static/media/loginsvg.5bf8c110c9b896285090614d15478fe3.svg",
     "index.html": "/myloginpage/index.html",
-    "main.5b2406ce.css.map": "/myloginpage/static/css/main.5b2406ce.css.map",
-    "main.73d9826a.js.map": "/myloginpage/static/js/main.73d9826a.js.map",
+    "main.8daee8b6.css.map": "/myloginpage/static/css/main.8daee8b6.css.map",
+    "main.7688880c.js.map": "/myloginpage/static/js/main.7688880c.js.map",
     "787.078d530c.chunk.js.map": "/myloginpage/static/js/787.078d530c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b2406ce.css",
-    "static/js/main.73d9826a.js"
+    "static/css/main.8daee8b6.css",
+    "static/js/main.7688880c.js"
   ]
 }
