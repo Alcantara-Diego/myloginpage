@@ -122,6 +122,32 @@
   background-color: #dbdbdb;
 }
 
+.loginContainer .loginContentContainer .formContainer form input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+}
+
+.loginContainer .loginContentContainer .formContainer form label[for="rememberMe"] {
+  font-size: 0.68rem;
+  color: #555555;
+}
+
+.loginContainer .loginContentContainer .formContainer form .forgotPassword {
+  background: none;
+  border: none;
+  font-size: 0.73rem;
+  color: #F23B5F;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
+.loginContainer .loginContentContainer .formContainer form .forgotPassword:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
 .loginContainer .loginContentContainer .formContainer form .actionBtn {
   margin-top: 1.5rem;
   background-color: #F23B5F;

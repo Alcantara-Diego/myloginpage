@@ -8,7 +8,7 @@ function Nav(){
                 
                 <div className="navbar-nav d-flex flex-row gap-3">
                     <a className="nav-link activeLink p-0"  href="#">Home</a>
-                    <a className="nav-link p-0 m-0" href="/myloginpage/#/login">Log in</a>
+                    <a className="nav-link p-0 m-0" href="/myloginpage/#/login">Login</a>
                 </div>
             </div>
         </nav>

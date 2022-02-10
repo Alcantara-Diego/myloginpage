@@ -26,6 +26,15 @@ function Login(){
                         <p className="inputDescription">Senha</p>
                         <input type="text" required></input>
 
+                        <div className='d-flex flex-row justify-content-between align-items-end mt-1'>
+                            <div className='d-flex flex-row align-items-center'>
+                                <input type="checkbox" id='rememberMe'></input>
+                                <label htmlFor="rememberMe" className='mx-1'>Lembrar de mim</label>
+                            </div>
+
+                            <p className='forgotPassword mb-0'>Esqueceu a senha?</p>
+                        </div>
+
                         
 
                         <button className='actionBtn'>Entrar</button>

@@ -103,6 +103,27 @@ $formPadding: 30px 25px;
                     border: none;
                     background-color: #dbdbdb;
                 }
+                input[type="checkbox"]{
+                    width: 17px;
+                    height: 17px;
+                }
+                label[for="rememberMe"]{
+                    font-size: 0.68rem;
+                    color: #555555;
+                }
+                .forgotPassword{
+                    background: none;
+                    border: none;
+                    font-size: 0.73rem;
+                    color: $mainColor;
+                    font-weight: bold; 
+                    cursor: pointer;
+                    transition: 250ms;
+                    &:hover{
+                        text-decoration: underline;
+                        text-decoration-thickness:3px;
+                    }
+                }
         
                 .actionBtn{
                     margin-top: 1.5rem;
